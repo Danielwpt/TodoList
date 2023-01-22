@@ -2,10 +2,12 @@ from TodoItem import todo_item
 
 if __name__ == "__main__":
 
-    todo1 = todo_item()
-    todo2 = todo_item()
-    todo1.add_todoItem("Buy bread")
-    todo2.add_todoItem("Buy drinks")
+    new_file_name = input("Enter new file name: ")
 
-    todo1.print_item()
-    todo2.print_item()
+    item_list = input("Enter thing to do: ")
+
+    todo1 = todo_item()
+
+    todo1.add_todoItem(item_list)
+
+    todo1.create_file(new_file_name)
