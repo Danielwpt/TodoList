@@ -1,5 +1,10 @@
 class todo_item:
-    item_list = []
+    
+    def __init__(self):
+        self.item_list = []
 
-    def __init__(self, item):
-        self.item = item
+    def add_todoItem(self, item):
+        self.item_list.append(item)
+
+    def print_item(self):
+        print(self.item_list)
