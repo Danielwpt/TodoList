@@ -10,4 +10,4 @@ if __name__ == "__main__":
 
     todo1.add_todoItem(item_list)
 
-    todo1.create_file(new_file_name)
+    todo1.create_file(new_file_name + ".txt")
